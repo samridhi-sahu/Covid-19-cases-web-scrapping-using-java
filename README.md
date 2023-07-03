@@ -1,19 +1,60 @@
-# Covid-19-cases-details-web-scrapping-using-java
+# Web Scraping COVID-19 Cases Details Project
+This is a web scraping project that retrieves COVID-19 cases details country-wise from a website using Java, Maven, the Jsoup library, and Java Swing for the graphical user interface (GUI).
 
-A web scrapping project using java, maven, jsoup library and using java swing for GUI.
+# Features
+1. Website Scraping: The application retrieves COVID-19 cases details from a specific website.
+2. Country-wise Data: The project provides COVID-19 cases details for each country individually.
+3. Graphical User Interface: The application utilizes Java Swing to display the scraped data in a user-friendly GUI.
 
-# Java jdk version 1.8
+# Technologies Used
+Java
 
-set path for jdk bin
+Maven
 
-set path for JAVA_HOME
+Jsoup Library
 
-# Java Maven archtype quickstart
+Java Swing
 
-set path for MAVEN_HOME
+# Getting Started
+To run this project locally, follow these steps:
 
-# JSOUP library
+Clone the repository:
 
-add maven dependency for jsoup or else install jsoup and and path
+git clone https://github.com/samridhi-sahu/Covid-19-cases-web-scrapping-using-java.git
 
-# Java Swing API for creating GUI
+Open the project directory:
+
+cd Covid-19-cases-web-scrapping-using-java
+
+Build the project using Maven:
+mvn clean install
+
+
+Run the application:
+
+java -jar target/Covid-19-cases-web-scrapping-using-java.jar
+
+The GUI application will launch, displaying the COVID-19 cases details country-wise.
+
+Click on a specific country to view its COVID-19 cases information.
+
+# Configuration
+
+The application is configured to scrape data from a specific website. If you want to scrape data from a different website, you can modify the URL in the Scraper.java file:
+
+String url = "https://www.example.com/covid-19";
+Replace "https://www.example.com/covid-19" with the URL of the website you want to scrape.
+
+# Dependencies
+
+This project uses the Jsoup library for web scraping. Maven will automatically download the required dependencies specified in the pom.xml file.
+
+<dependencies>
+  <dependency>
+    <groupId>org.jsoup</groupId>
+    <artifactId>jsoup</artifactId>
+    <version>1.14.3</version>
+  </dependency>
+</dependencies>
+
+![Screenshot](covid.png)
