@@ -18,17 +18,11 @@ Java Swing
 # Getting Started
 To run this project locally, follow these steps:
 
-Clone the repository:
+Clone the repository: git clone https://github.com/samridhi-sahu/Covid-19-cases-web-scrapping-using-java.git
 
-git clone https://github.com/samridhi-sahu/Covid-19-cases-web-scrapping-using-java.git
+Open the project directory: cd Covid-19-cases-web-scrapping-using-java
 
-Open the project directory:
-
-cd Covid-19-cases-web-scrapping-using-java
-
-Build the project using Maven:
-mvn clean install
-
+Build the project using Maven: mvn clean install
 
 Run the application:
 
@@ -43,6 +37,7 @@ Click on a specific country to view its COVID-19 cases information.
 The application is configured to scrape data from a specific website. If you want to scrape data from a different website, you can modify the URL in the Scraper.java file:
 
 String url = "https://www.example.com/covid-19";
+
 Replace "https://www.example.com/covid-19" with the URL of the website you want to scrape.
 
 # Dependencies
